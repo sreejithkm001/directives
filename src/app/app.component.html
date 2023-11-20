@@ -6,6 +6,9 @@
       <li><a routerLink="Product">Product</a></li>
       <li><a routerLink="Contact">Contact</a></li>
       <li><a routerLink="About">About</a></li>
+      <li><a [routerLink]="['student','john']">Student 1</a></li>
+      <li><a [routerLink]="['student','max']">Student 2</a></li>
+      <li><a (click)="studentclick('James')">Student 3</a></li>
     </ul>
   </nav>
   <router-outlet></router-outlet>
