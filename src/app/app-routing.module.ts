@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { StudentComponent } from './student/student.component';
 import { WildcardComponent } from './wildcard/wildcard.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   // { path: '**', component: WildcardComponent },
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     component: AboutComponent,
     path: 'About',
+  },
+  {
+    component: ProfileComponent,
+    path: 'Profile',
   },
   {
     component: StudentComponent,

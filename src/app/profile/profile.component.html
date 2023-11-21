@@ -1,0 +1,20 @@
+<!-- INTERPOLATION -->
+<h3>Hey its me {{firstname}}{{secondname}}</h3>
+
+<!-- PROPERTY BINDING -->
+<h3>Mobile:<span [innerText]="title"></span></h3>
+<p [class]="myclass">Coming from Thrissur</p>
+<p [class.red]="true">MCA 2023 passout</p>
+<p [style.color]="'green'">Email:sreejithkm@gmail.com</p>
+<p [style.color]="status=='error' ? 'brown' : 'blue'">State:Kerala</p>
+
+<!-- EVENT BINDING -->
+<button (click)="onSave()">Click to know age: <span>{{clickcount}}</span></button>
+<p>enter your city</p>
+<input #mytitle (keyup)="keyup(mytitle.value)">
+<h3>{{text}}</h3>
+
+<!-- TWO WAY BINDING -->
+<p>enter your DOB</p>
+<input [(ngModel)]="value">
+<p>{{value}}</p>
