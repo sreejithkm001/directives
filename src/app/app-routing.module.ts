@@ -6,6 +6,8 @@ import { AboutComponent } from './about/about.component';
 import { StudentComponent } from './student/student.component';
 import { WildcardComponent } from './wildcard/wildcard.component';
 import { ProfileComponent } from './profile/profile.component';
+import { TableComponent } from './table/table.component';
+import { DirectiveTableComponent } from './directive-table/directive-table.component';
 
 const routes: Routes = [
   // { path: '**', component: WildcardComponent },
@@ -29,6 +31,10 @@ const routes: Routes = [
   {
     component: ProfileComponent,
     path: 'Profile',
+  },
+  {
+    component: DirectiveTableComponent,
+    path: 'Table',
   },
   {
     component: StudentComponent,

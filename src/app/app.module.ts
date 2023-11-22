@@ -9,6 +9,9 @@ import { ContactComponent } from './contact/contact.component';
 import { StudentComponent } from './student/student.component';
 import { WildcardComponent } from './wildcard/wildcard.component';
 import { ProfileComponent } from './profile/profile.component';
+import { TableComponent } from './table/table.component';
+import { CommonModule } from '@angular/common';
+import { DirectiveTableComponent } from './directive-table/directive-table.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +21,15 @@ import { ProfileComponent } from './profile/profile.component';
     ContactComponent,
     StudentComponent,
     WildcardComponent,
-    ProfileComponent
+    ProfileComponent,
+    TableComponent,
+    DirectiveTableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

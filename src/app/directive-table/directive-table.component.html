@@ -1,0 +1,6 @@
+<!-- <p>directive-table works!</p> -->
+<div>
+    <button (click)="toggleTable()">{{ showTable ? 'Hide Table' : 'Show Table' }}</button> &nbsp;
+    <button (click)="toggleStyle()">{{ applyStyle ? 'unstyle Table' : 'Style Table' }}</button>
+    <app-table *ngIf="showTable" [applyStyle]="applyStyle"></app-table>
+  </div>
